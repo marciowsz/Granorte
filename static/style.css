@@ -1,0 +1,23 @@
+body {
+        font-family: Arial;
+        padding: 30px;
+        border-radius: 10px;
+        width: 600px;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #1e3a8a;
+    }
+    li {
+        margin-bottom: 10px 0;
+    }
+    .status {
+        color: green;
+        font-weight: bold;
+    }
+    #rodape {
+        text-align: center;
+        color: gray;
+        margin-top: 20px;
+    }

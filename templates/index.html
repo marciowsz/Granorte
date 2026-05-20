@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Granorte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="box">
+        <h1>Visão Granorte</h1>
+        <h3>Bem-vindo à Visão Granorte!</h3> 
+        <h3>Informacoes do caminhao</h3>
+        <img src = "{{ url_for('static', filename='resultado.jpg') }}" width="500">
+        <div>
+            <p>Placa: {{ dados.placa }}</p>
+            <p>Peso: {{ dados.peso }}</p>
+            <p>Status: {{ dados.status }}</p>
+            <p>Carga: {{ dados.carga }}</p>
+            <p>Fraude: {{ dados.fraude }}</p>
+        </div>
+        <h3>Aqui você pode acessar as seguintes funcionalidades:</h3>
+        <ul>
+            <li> Leitura automatica de placas </li>
+            <li> Verificacao de cargas </li>
+            <li> Controle de entrada e saida </li>
+            <li> Deteccao de fraude na pesagem</li>
+            <li> Analise da cacamba</li>
+        </ul>
+        <p class="status">Sistema Operando</p>
+        <footer id="rodape">Sistema desenvolvido para controle logistico e 
+            automacao operacional utilizando IA</footer>
+    </div>
+</body>
+</html>
