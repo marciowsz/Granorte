@@ -23,7 +23,7 @@ Sistema inteligente de controle logístico utilizando Inteligência Artificial e
 
 ## Objetivo
 
-Projeto acadêmico desenvolvido como proposta de solução tecnológica para problemas logísticos em operações de pedreira e transporte de cargas.
+Projeto acadêmico ainda em desenvolvimento como proposta de solução tecnológica para problemas logísticos em operações de pedreira e transporte de cargas.
 
 ## Deploy Online
 
