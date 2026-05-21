@@ -11,13 +11,19 @@
         <h1>Visão Granorte</h1>
         <h3>Bem-vindo à Visão Granorte!</h3> 
         <h3>Informacoes do caminhao</h3>
-        <img src = "{{ url_for('static', filename='resultado.jpg') }}" width="500">
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="imagem" required>
+            <button type="submit">Analisar Caminhao</button>
+        </form>
+        {% if imagem %}
+        <img src="{{ url_for('static', filename=imagem) }}" class="imagem-caminhao">
+        {% endif %}
         <div>
-            <p>Placa: {{ dados.placa }}</p>
-            <p>Peso: {{ dados.peso }}</p>
-            <p>Status: {{ dados.status }}</p>
-            <p>Carga: {{ dados.carga }}</p>
-            <p>Fraude: {{ dados.fraude }}</p>
+            <p>Placa: {{ placa }}</p>
+            <p>Peso: {{ peso }}</p>
+            <p>Status: {{ status }}</p>
+            <p>Carga: {{ carga }}</p>
+            <p>Fraude: {{ fraude }}</p>
         </div>
         <h3>Aqui você pode acessar as seguintes funcionalidades:</h3>
         <ul>

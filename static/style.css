@@ -21,3 +21,9 @@ body {
         color: gray;
         margin-top: 20px;
     }
+    .imagem-caminhao{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
